@@ -56,7 +56,7 @@ const htmlContent = `
             Full-Stack Web & Software Developer
         </span>
         <h1 class="text-4xl md:text-6xl font-extrabold mt-6 tracking-tight">
-            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Website to Life</span>
+            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Let's Bring Your Dream</span>
         </h1>
         <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
         Fast, modern, and responsive web applications tailored to your business or personal brand.        </p>
@@ -73,7 +73,7 @@ const htmlContent = `
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
                     <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-full border border-indigo-800/50">Architecture Firm Website</span>
-                    <h3 class="text-xl font-bold text-white mt-4 mb-2">Online Retail Store</h3>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-2">GraQuins Ensemble Studio</h3>
                     <p class="text-slate-400 text-sm mb-4">Custom outfit catalog and fashion showcase with dynamic product viewing and seamless client inquiries.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">TypeScript</span>
@@ -90,7 +90,7 @@ const htmlContent = `
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
                     <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800/50">AI Powered Educaional Assistant System</span>
-                    <h3 class="text-xl font-bold text-white mt-4 mb-2">Service Booking Platform</h3>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-2">EduMind AI</h3>
                     <p class="text-slate-400 text-sm mb-4">Smart AI-powered learning platform providing personalized study assistance, automated summaries, and interactive tutoring.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Node.js</span>
@@ -107,7 +107,7 @@ const htmlContent = `
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
                     <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/50">Repairshop Management System</span>
-                    <h3 class="text-xl font-bold text-white mt-4 mb-2">Custom Business Dashboard</h3>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-2">Villanueva Repair Shop </h3>
                     <p class="text-slate-400 text-sm mb-4">Digital storefront and service portal for a device repair business featuring online quote requests and repair status tracking.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">TypeScript</span>
