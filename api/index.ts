@@ -46,14 +46,21 @@ const htmlContent = `
             <span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
                 DevPortfolio.ts
             </span>
-            <div class="flex items-center space-x-6">
-                <a href="#projects" class="text-slate-400 hover:text-white text-sm font-medium transition">Projects</a>
-                <a href="#rates" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all">
-                    Request a Website
-                </a>
-            </div>
+            <a href="#rates" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all">
+                Request a Website            </a>
         </div>
     </nav>
+
+    <section class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
+        <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 rounded-full">
+            Full-Stack Web & Software Developer
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mt-6 tracking-tight">
+            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Let's Bring Your Dream</span>
+        </h1>
+        <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
+        Fast, modern, and responsive web applications tailored to your business or personal brand.        </p>
+    </section>
 
     <section id="projects" class="py-12 px-6 max-w-6xl mx-auto border-t border-slate-800/50">
         <div class="text-center mb-12">
@@ -136,7 +143,7 @@ const htmlContent = `
                         <li>✓ Contact Form</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
+                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
             </div>
 
             <div class="bg-gradient-to-b from-indigo-950/40 to-slate-900 border-2 border-indigo-500 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl shadow-indigo-950/50">
@@ -154,7 +161,7 @@ const htmlContent = `
                         <li>✓ Basic SEO Optimization</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Select This</button>
+                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Piliin Ito</button>
             </div>
 
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
@@ -171,7 +178,7 @@ const htmlContent = `
                         <li>✓ Priority Technical Support</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
+                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
             </div>
         </div>
     </section>
@@ -204,13 +211,30 @@ const htmlContent = `
                     <label class="block text-sm font-medium text-slate-300 mb-1">Project Details</label>
                     <textarea id="details" rows="4" placeholder="Briefly describe what you need built..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-indigo-500"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-lg transition-all">Send Request</button>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-lg transition-all"> Request</button>
             </form>
             <div id="statusMessage" class="mt-4 text-center text-sm hidden"></div>
         </div>
     </section>
 
-   
+    <section class="py-12 px-6 max-w-5xl mx-auto border-t border-slate-800/80 mt-12">
+        <h3 class="text-xl font-bold mb-4 text-slate-300">Live Client Requests (Database Logs)</h3>
+        <div class="overflow-x-auto bg-slate-900 border border-slate-800 rounded-xl">
+            <table class="w-full text-left text-sm text-slate-400">
+                <thead class="bg-slate-950 text-slate-300 border-b border-slate-800">
+                    <tr>
+                        <th class="p-3">ID</th>
+                        <th class="p-3">Pangalan</th>
+                        <th class="p-3">Email</th>
+                        <th class="p-3">Package</th>
+                        <th class="p-3">Rate</th>
+                        <th class="p-3">Petsa</th>
+                    </tr>
+                </thead>
+                <tbody id="requestsTableBody"></tbody>
+            </table>
+        </div>
+    </section>
 
     <script>
         function selectPackage(tier, price) {
