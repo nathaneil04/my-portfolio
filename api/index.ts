@@ -217,25 +217,6 @@ const htmlContent = `
         </div>
     </section>
 
-    <section class="py-12 px-6 max-w-5xl mx-auto border-t border-slate-800/80 mt-12">
-        <h3 class="text-xl font-bold mb-4 text-slate-300">Live Client Requests (Database Logs)</h3>
-        <div class="overflow-x-auto bg-slate-900 border border-slate-800 rounded-xl">
-            <table class="w-full text-left text-sm text-slate-400">
-                <thead class="bg-slate-950 text-slate-300 border-b border-slate-800">
-                    <tr>
-                        <th class="p-3">ID</th>
-                        <th class="p-3">Pangalan</th>
-                        <th class="p-3">Email</th>
-                        <th class="p-3">Package</th>
-                        <th class="p-3">Rate</th>
-                        <th class="p-3">Petsa</th>
-                    </tr>
-                </thead>
-                <tbody id="requestsTableBody"></tbody>
-            </table>
-        </div>
-    </section>
-
     <script>
         function selectPackage(tier, price) {
             document.getElementById('tier').value = tier;
