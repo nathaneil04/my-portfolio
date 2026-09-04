@@ -161,7 +161,7 @@ const htmlContent = `
                         <li>✓ Basic SEO Optimization</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Select This/button>
+                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Select This</button>
             </div>
 
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
