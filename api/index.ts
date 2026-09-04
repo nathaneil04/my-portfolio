@@ -55,17 +55,6 @@ const htmlContent = `
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
-        <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 rounded-full">
-            Full-Stack Web & Software Developer
-        </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold mt-6 tracking-tight">
-            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Let's Bring Your Dream</span>
-        </h1>
-        <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
-        Fast, modern, and responsive web applications tailored to your business or personal brand.        </p>
-    </section>
-
     <section id="projects" class="py-12 px-6 max-w-6xl mx-auto border-t border-slate-800/50">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold">Featured Web Apps</h2>
@@ -76,16 +65,16 @@ const htmlContent = `
             <!-- Project 1 -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-full border border-indigo-800/50">E-Commerce</span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-full border border-indigo-800/50">Architecture Firm Website</span>
                     <h3 class="text-xl font-bold text-white mt-4 mb-2">Online Retail Store</h3>
-                    <p class="text-slate-400 text-sm mb-4">Fast product catalog with real-time inventory management and secure checkout system.</p>
+                    <p class="text-slate-400 text-sm mb-4">Custom outfit catalog and fashion showcase with dynamic product viewing and seamless client inquiries.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">TypeScript</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Express</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Turso SQLite</span>
                     </div>
                 </div>
-                <a href="#" target="_blank" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
+                <a href="https://graquins-ensemble-studio.vercel.app" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
                     Live Demo ↗
                 </a>
             </div>
@@ -93,16 +82,16 @@ const htmlContent = `
             <!-- Project 2 -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800/50">Management System</span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800/50">AI Powered Educaional Assistant System</span>
                     <h3 class="text-xl font-bold text-white mt-4 mb-2">Service Booking Platform</h3>
-                    <p class="text-slate-400 text-sm mb-4">Client request portal with status tracking, dynamic tables, and automated database logs.</p>
+                    <p class="text-slate-400 text-sm mb-4">Smart AI-powered learning platform providing personalized study assistance, automated summaries, and interactive tutoring.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Node.js</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Tailwind CSS</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">REST API</span>
                     </div>
                 </div>
-                <a href="#" target="_blank" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
+                <a href="https://edumind-ai-snowy.vercel.app/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
                     Live Demo ↗
                 </a>
             </div>
@@ -110,16 +99,16 @@ const htmlContent = `
             <!-- Project 3 -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/50">SaaS App</span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/50">Repairshop Management System</span>
                     <h3 class="text-xl font-bold text-white mt-4 mb-2">Custom Business Dashboard</h3>
-                    <p class="text-slate-400 text-sm mb-4">Interactive admin dashboard designed for real-time data monitoring and reporting.</p>
+                    <p class="text-slate-400 text-sm mb-4">Digital storefront and service portal for a device repair business featuring online quote requests and repair status tracking.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">TypeScript</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Vercel</span>
                         <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">SQL</span>
                     </div>
                 </div>
-                <a href="#" target="_blank" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
+                <a href="https://villanueva-repair-shop.vercel.app/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2.5 bg-slate-800 hover:bg-slate-700 text-indigo-400 font-semibold rounded-xl text-sm transition border border-slate-700/50">
                     Live Demo ↗
                 </a>
             </div>
@@ -147,7 +136,7 @@ const htmlContent = `
                         <li>✓ Contact Form</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
             </div>
 
             <div class="bg-gradient-to-b from-indigo-950/40 to-slate-900 border-2 border-indigo-500 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl shadow-indigo-950/50">
@@ -165,7 +154,7 @@ const htmlContent = `
                         <li>✓ Basic SEO Optimization</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Select This</button>
             </div>
 
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
@@ -182,7 +171,7 @@ const htmlContent = `
                         <li>✓ Priority Technical Support</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
             </div>
         </div>
     </section>
