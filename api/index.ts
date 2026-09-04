@@ -56,7 +56,7 @@ const htmlContent = `
             Full-Stack Web & Software Developer
         </span>
         <h1 class="text-4xl md:text-6xl font-extrabold mt-6 tracking-tight">
-            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Let's Bring Your Dream</span>
+            Let's Bring Your Dream <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Website to Life</span>
         </h1>
         <p class="mt-4 text-slate-400 text-lg max-w-2xl mx-auto">
         Fast, modern, and responsive web applications tailored to your business or personal brand.        </p>
