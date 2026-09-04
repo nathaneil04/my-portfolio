@@ -143,7 +143,7 @@ const htmlContent = `
                         <li>✓ Contact Form</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Landing Page', '₱5,000')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
             </div>
 
             <div class="bg-gradient-to-b from-indigo-950/40 to-slate-900 border-2 border-indigo-500 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl shadow-indigo-950/50">
@@ -161,7 +161,7 @@ const htmlContent = `
                         <li>✓ Basic SEO Optimization</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Business Website', '₱15,000')" class="mt-8 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition">Select This/button>
             </div>
 
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
@@ -178,7 +178,7 @@ const htmlContent = `
                         <li>✓ Priority Technical Support</li>
                     </ul>
                 </div>
-                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Piliin Ito</button>
+                <button onclick="selectPackage('Custom Full-Stack System', '₱35,000+')" class="mt-8 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl transition">Select This</button>
             </div>
         </div>
     </section>
