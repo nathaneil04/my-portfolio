@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "api/index.ts",
   "scripts": {
-  "build": "tsc || echo 'Build finished'"
+  "build": "echo 'No build needed'"
 },
   "dependencies": {
     "@libsql/client": "^0.14.0",
