@@ -312,6 +312,20 @@ export interface ServiceOption {
   label: string;
   price: number;
 }
+export function setButtonLoading(
+  button: HTMLButtonElement, 
+  isLoading: boolean, 
+  loadingText = 'Processing...'
+): void {
+  if (isLoading) {
+    button.dataset.originalText = button.innerHTML;
+    button.innerHTML = `<span class="spinner"></span> ${loadingText}`;
+    button.disabled = true;
+  } else {
+    button.innerHTML = button.dataset.originalText || button.innerHTML;
+    button.disabled = false;
+  }
+}
 
 export function initQuoteCalculator(
   containerId: string,
