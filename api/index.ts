@@ -307,5 +307,74 @@ app.get("*", (req: Request, res: Response) => {
   res.setHeader("Content-Type", "text/html");
   res.send(htmlContent);
 });
+export interface ServiceOption {
+  id: string;
+  label: string;
+  price: number;
+}
+
+export function initQuoteCalculator(
+  containerId: string,
+  services: ServiceOption[],
+  onTotalChange?: (total: number) => void
+): void {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="quote-calculator" style="border: 1px solid #e5e7eb; padding: 16px; border-radius: 8px;">
+      <h4 style="margin-top:0;">Select Needed Services</h4>
+      ${services.map(s => `
+        <label style="display: flex; justify-content: space-between; margin-bottom: 8px; cursor: pointer;">
+          <span><input type="checkbox" class="quote-item" value="${s.price}"> ${s.label}</span>
+          <strong>$${s.price}</strong>
+        </label>
+      `).join('')}
+      <hr style="margin: 12px 0; border: none; border-top: 1px solid #eee;" />
+      <div style="display: flex; justify-content: space-between; font-weight: bold;">
+        <span>Estimated Total:</span>
+        <span id="quote-total">$0</span>
+      </div>
+    </div>
+  `;
+
+  container.addEventListener('change', () => {
+    const checkedBoxes = container.querySelectorAll<HTMLInputElement>('.quote-item:checked');
+    const total = Array.from(checkedBoxes).reduce((sum, cb) => sum + Number(cb.value), 0);
+    const totalEl = document.getElementById('quote-total');
+    if (totalEl) totalEl.textContent = `$${total}`;
+    if (onTotalChange) onTotalChange(total);
+  });
+}
+export function initLeadDrawer(triggerBtnId: string, drawerId: string, overlayId: string): void {
+  const trigger = document.getElementById(triggerBtnId);
+  const drawer = document.getElementById(drawerId);
+  const overlay = document.getElementById(overlayId);
+
+  const toggle = (isOpen: boolean) => {
+    if (!drawer || !overlay) return;
+    drawer.style.transform = isOpen ? 'translateX(0)' : 'translateX(100%)';
+    overlay.style.display = isOpen ? 'block' : 'none';
+  };
+
+  trigger?.addEventListener('click', () => toggle(true));
+  overlay?.addEventListener('click', () => toggle(false));
+}
+export function renderTrustBadge(
+  containerId: string, 
+  rating: number, 
+  completedJobs: number
+): void {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = `
+    <div style="display: inline-flex; align-items: center; gap: 10px; background: #f9fafb; padding: 8px 14px; border-radius: 20px; border: 1px solid #f3f4f6;">
+      <span style="color: #f59e0b; font-weight: bold;">★ ${rating.toFixed(1)} / 5.0</span>
+      <span style="color: #6b7280;">|</span>
+      <span style="font-size: 0.875rem; color: #374151;"><strong>${completedJobs}+</strong> Repairs Completed</span>
+    </div>
+  `;
+}
 
 export default app;
