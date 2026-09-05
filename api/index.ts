@@ -326,6 +326,43 @@ export function setButtonLoading(
     button.disabled = false;
   }
 }
+export function mountGallerySection(
+  targetElementId: string, 
+  items: GalleryItem[], 
+  featuredSlider?: { id: string; title: string; beforeImg: string; afterImg: string }
+): void {
+  const hostElement = document.getElementById(targetElementId);
+  if (!hostElement) return;
+
+  // Build structure inside host container
+  hostElement.innerHTML = `
+    <section style="padding: 24px; max-width: 1100px; margin: 0 auto; font-family: system-ui, sans-serif;">
+      ${featuredSlider ? `
+        <div style="margin-bottom: 36px;">
+          <h3 style="margin: 0 0 4px 0; font-size: 1.25rem; font-weight: 700;">Featured Repair Showcase</h3>
+          <p style="margin: 0 0 16px 0; color: #6b7280; font-size: 0.875rem;">Drag the handle to view before & after results.</p>
+          <div id="featured-slider-mount"></div>
+        </div>
+      ` : ''}
+      
+      <div style="margin-bottom: 16px;">
+        <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; font-weight: 700;">Completed Work Gallery</h3>
+        <div id="gallery-filter-bar" style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px;"></div>
+      </div>
+
+      <div id="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;"></div>
+    </section>
+  `;
+
+  // Initialize components into mounted containers
+  if (featuredSlider) {
+    initBeforeAfterSlider('featured-slider-mount', featuredSlider);
+  }
+
+  initFilterableGallery('gallery-grid', 'gallery-filter-bar', items, (selected) => {
+    openWorkDetailModal(selected);
+  });
+}
 
 export function initQuoteCalculator(
   containerId: string,
